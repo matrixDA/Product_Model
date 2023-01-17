@@ -47,7 +47,7 @@ public class ProductReader {
                 System.out.println();
 
 
-                System.out.print(String.format("%-10s%-12s%-28s%s", "ID#", "Name", "Description","Cost"));
+                System.out.printf("%-10s%-12s%-28s%s", "ID#", "Name", "Description","Cost");
                 System.out.print("\n============================================================");
                 String[] fields;
                 for(String l:lines)
@@ -60,7 +60,7 @@ public class ProductReader {
                         name = fields[1].trim();
                         description = fields[2].trim();
                         cost = Double.parseDouble(fields[3].trim());
-                        System.out.print(String.format("\n%-10s%-12s%-28s$%.2f", id, name, description, cost));
+                        System.out.printf("\n%-10s%-12s%-28s$%.2f", id, name, description, cost);
                     }
                     else
                     {
